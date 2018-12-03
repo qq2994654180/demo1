@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo1.v1.mapping.mapper.UserMapper">
+    <sql id="UserColumns">
+        a.id as "id",
+        a.userId as "userId",
+        a.userName as "userName",
+        a.passWord as "passWord",
+        a.userHead as "userHead",
+        a.createDate as "createDate",
+        a.userState as "userState"
+    </sql>
+
+    <select id="selectUserById" parameterType="string" resultType="com.example.demo1.v1.bean.User">
+        SELECT
+        <include refid="UserColumns"/>
+        FROM `sys_user` AS a
+        where a.userId=#{userId}
+    </select>
+</mapper>
