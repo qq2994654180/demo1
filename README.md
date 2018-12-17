@@ -15,4 +15,5 @@ spring boot项目，集成sawgger2,druid数据连接池及监控，自定义拦�
 5.修改DruidStatViewServlet数据库监控地址，包括黑名单白名单用户名和密码
 启动成功：
 http://localhost:8000/swagger-ui.html（swagger地址）
-http://localhost:8000/druid/login.html（数据库监控地址）
+HTTP：//本地主机：8000 /德/ login.html的（数据库监控地址）
+如有不懂可加微信xx17610115570 b标注：项目
